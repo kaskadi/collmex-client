@@ -10,20 +10,18 @@
     "type": "git",
     "url": "https://github.com/klimapartner/co-collmex"
   },
-  "author": {
-    "name": "Holger Will",
-    "email": "h.will@klimapartner.de",
-    "url": "https://github.com/Holger-Will"
-  },
-  "license": "ISC",
+  "author": "Klimapartner GmbH <kontakt@klimapartner.de> (https://klimapartner.de)",
+  "contributors": [
+    "Holger Will <h.will@klimapartner.de>",
+    "Alexis Lemaire <a.lemaire@klimapartner.de>"
+  ],
+  "license": "MIT",
   "dependencies": {
     "csv-parse": "^1.1.7",
-    "iconv": "^2.3.0",
-    "koa-request": "^1.0.0"
+    "iconv": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "co": "^4.6.0",
     "mocha": "^3.1.2"
   }
 }
