@@ -8,21 +8,19 @@ module.exports = function (opts) {
 
 function getRequestBody (opts) {
   const satzarten = require('./satzarten.json')
-  let req = ''
-  for (const opt of opts) {
+  return opts.reduce((req, opt) => {
     const satz = satzarten[opt.Satzart]
     for (const prop in opt) {
       satz[prop] = opt[prop]
     }
-    if (satz.hasOwnProperty('Firma_Nr')) {
+    if (Object.prototype.hasOwnProperty.call(satz, 'Firma_Nr')) {
       satz.Firma_Nr = opt.Firma_Nr || this.Firma_Nr
     }
-    if (satz.hasOwnProperty('Systemname')) {
+    if (Object.prototype.hasOwnProperty.call(satz, 'Systemname')) {
       satz.Systemname = opt.Systemname || this.Systemname
     }
-    req += `${Object.values(satz).join(';')}\n`
-  }
-  return req
+    return req + `${Object.values(satz).join(';')}\n`
+  }, '')
 }
 
 function makeRequest (login, req) {
