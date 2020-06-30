@@ -1,3 +1,4 @@
+/* eslint-env mocha */
 var assert = require('chai').assert
 var Collmex = require("../index.js")
 try{
