@@ -8,8 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/klimapartner/co-collmex"
+    "url": "https://github.com/kaskadi/collmex-client"
   },
+  "bugs": {
+    "url": "https://github.com/kaskadi/collmex-client/issues"
+  },
+  "homepage": "https://github.com/kaskadi/collmex-client#readme",
   "author": "Klimapartner GmbH <kontakt@klimapartner.de> (https://klimapartner.de)",
   "contributors": [
     "Holger Will <h.will@klimapartner.de>",
