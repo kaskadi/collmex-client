@@ -4,7 +4,8 @@
   "description": "a client to communicate with Collmex API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -b --recursive"
+    "test": "mocha -b --recursive",
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.0.1",
+    "standard": "^14.3.4"
   }
 }
