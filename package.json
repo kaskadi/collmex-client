@@ -1,7 +1,7 @@
 {
-  "name": "co-collmex",
-  "version": "0.14.0",
-  "description": "a collmex api wrapper for co and koa",
+  "name": "collmex-client",
+  "version": "1.0.0",
+  "description": "a client to communicate with Collmex API",
   "main": "index.js",
   "scripts": {
     "test": "mocha -b --recursive"
@@ -17,11 +17,11 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "csv-parse": "^1.1.7",
-    "iconv": "^2.3.0"
+    "csv-parse": "^4.10.1",
+    "iconv": "^3.0.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
   }
 }
