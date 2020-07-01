@@ -1,6 +1,6 @@
 {
   "name": "collmex-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a node client to communicate with Collmex API",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,12 @@
     "Holger Will <h.will@klimapartner.de>",
     "Alexis Lemaire <a.lemaire@klimapartner.de>"
   ],
-  "keywords": ["collmex", "collmex-api", "client", "node-client"],
+  "keywords": [
+    "collmex",
+    "collmex-api",
+    "client",
+    "node-client"
+  ],
   "license": "MIT",
   "dependencies": {
     "csv-parse": "^4.10.1",
