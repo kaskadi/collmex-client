@@ -1,0 +1,21 @@
+name: build
+on:
+  pull_request:
+    branches:
+      - 'master'
+      - 'dev'
+    types: [opened, reopened, edited]
+    paths:
+      - 'index.js'
+      - 'modules/**'
+      - 'test/**'
+      - 'package.json'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i
+    - name: Test
+      run: npm test
