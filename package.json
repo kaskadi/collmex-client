@@ -4,7 +4,7 @@
   "description": "a client to communicate with Collmex API",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -b --recursive",
+    "test": "mocha -t 10000 test/**.test.js",
     "lint": "standard --fix"
   },
   "repository": {
