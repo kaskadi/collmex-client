@@ -20,6 +20,8 @@ jobs:
       run: npm i
     - name: Test
       run: npm test
+      env:
+        INIT_CLIENT_OPTS: ${{ secrets.INIT_CLIENT_OPTS }}
     - name: Publish to NPM
       uses: JS-DevTools/npm-publish@v1
       with:

@@ -19,3 +19,5 @@ jobs:
       run: npm i
     - name: Test
       run: npm test
+      env:
+        INIT_CLIENT_OPTS: ${{ secrets.INIT_CLIENT_OPTS }}

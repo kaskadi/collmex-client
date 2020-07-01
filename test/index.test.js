@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 const assert = require('chai').assert
 const fs = require('fs')
-const options = fs.existsSync(`${__dirname}/data/options.json`) ? require('./data/options.json') : require('./data/options.default.json')
+const options = fs.existsSync(`${__dirname}/data/options.json`) ? require('./data/options.json') : process.env.INIT_CLIENT_OPTS ? JSON.parse(process.env.INIT_CLIENT_OPTS) : require('./data/options.default.json')
 const invalidOptions = require('./data/options.invalid.json')
 const collmex = require('../index.js')(options)
 const invalidCollmex = require('../index.js')(invalidOptions)
