@@ -20,6 +20,7 @@
     "Holger Will <h.will@klimapartner.de>",
     "Alexis Lemaire <a.lemaire@klimapartner.de>"
   ],
+  "keywords": ["collmex", "collmex-api", "client", "node-client"],
   "license": "MIT",
   "dependencies": {
     "csv-parse": "^4.10.1",
