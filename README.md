@@ -1,5 +1,6 @@
-![Build badge](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/build?label=build&logo=mocha)
-![Publish badge](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/publish?label=publish&logo=npm)
+![Build workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/build?label=build&logo=mocha)
+![Publish workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/publish?label=publish&logo=npm)
+![Data sync workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/sync-data?label=sync-data&logo=github-actions)
 
 # collmex-client
 
