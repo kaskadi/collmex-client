@@ -4,7 +4,7 @@ on:
     branches:
       - 'master'
       - 'dev'
-    types: [opened, reopened, edited]
+    types: [opened, reopened, edited, synchronize]
     paths:
       - 'index.js'
       - 'modules/**'

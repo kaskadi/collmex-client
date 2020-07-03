@@ -7,7 +7,7 @@ module.exports = function (opts) {
 }
 
 function getRequestBody (opts) {
-  const satzarten = require('./satzarten.json')
+  const satzarten = require('./load-satzarten.js')()
   return opts.reduce((req, opt) => {
     const satz = satzarten[opt.Satzart]
     for (const prop in opt) {
