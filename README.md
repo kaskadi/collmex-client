@@ -1,6 +1,9 @@
-![Build workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/build?label=build&logo=mocha)
-![Publish workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/publish?label=publish&logo=npm)
-![Data sync workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/sync-data?label=sync-data&logo=github-actions)
+[![Build workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/build?label=build&logo=mocha)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Abuild)
+[![Publish workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/publish?label=publish&logo=npm)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Apublish)
+[![Data sync workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/sync-data?label=sync-data&logo=github-actions)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Async-data)
+
+[![](https://img.shields.io/codeclimate/maintainability/kaskadi/collmex-client?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
+[![](https://img.shields.io/codeclimate/tech-debt/kaskadi/collmex-client?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
 
 # collmex-client
 
