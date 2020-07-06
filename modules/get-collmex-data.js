@@ -13,11 +13,10 @@ function getRequestBody (opts) {
     for (const prop in opt) {
       satz[prop] = opt[prop]
     }
-    if (Object.prototype.hasOwnProperty.call(satz, 'Firma_Nr')) {
-      satz.Firma_Nr = opt.Firma_Nr || this.Firma_Nr
-    }
-    if (Object.prototype.hasOwnProperty.call(satz, 'Systemname')) {
-      satz.Systemname = opt.Systemname || this.Systemname
+    for (const prop of ['Firma_Nr', 'Systemname']) {
+      if (Object.prototype.hasOwnProperty.call(satz, prop)) {
+        satz[prop] = opt[prop] || this[prop]
+      }
     }
     return req + `${Object.values(satz).join(';')}\n`
   }, '')
