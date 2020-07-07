@@ -1,6 +1,7 @@
 module.exports = () => {
-  const path = `${process.cwd()}/data/satzarten.json`
+  const path = require('path')
+  const filePath = path.join(__dirname, '..', 'data', 'satzarten.json')
   const { existsSync } = require('fs')
-  const fallbackPath = `${path.slice(0, -5)}.original${path.slice(-5)}`
-  return existsSync(path) ? require(path) : require(fallbackPath)
+  const fallbackPath = `${filePath.slice(0, -5)}.original${filePath.slice(-5)}`
+  return existsSync(filePath) ? require(filePath) : require(fallbackPath)
 }
