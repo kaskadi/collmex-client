@@ -11,9 +11,9 @@ jobs:
     - name: Scrape data from Collmex
       uses: kaskadi/action-collmex-scraper@master
       env:
-        USER_NR: ${{ secrets.USER_NR }}
-        USER_ID: ${{ secrets.USER_ID }}
-        USER_PWD: ${{ secrets.USER_PWD }}
+        CMX_USER: ${{ secrets.CMX_USER }}
+        CMX_PWD: ${{ secrets.CMX_PWD }}
+        CMX_CUST_ID: ${{ secrets.CMX_CUST_ID }}
         SATZARTEN_PATH: ${{ secrets.SATZARTEN_PATH }}
-        USER_NAME: ${{ secrets.USER_NAME }}
-        USER_EMAIL: ${{ secrets.USER_EMAIL }}
+        GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
+        GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
