@@ -8,6 +8,7 @@ on:
     paths:
       - 'index.js'
       - 'modules/**'
+      - 'data/**'
       - 'test/**'
       - 'package.json'
 jobs:

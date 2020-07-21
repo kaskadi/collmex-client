@@ -6,6 +6,7 @@ on:
     paths:
       - 'index.js'
       - 'modules/**'
+      - 'data/**'
       - 'package.json'
 jobs:
   publish:
