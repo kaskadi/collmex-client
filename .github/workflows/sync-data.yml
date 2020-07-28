@@ -2,7 +2,7 @@ name: sync-data
 on:
   schedule:
     # update every day at 7AM '0 7 * * *'
-    - cron:  '*/2 * * * *'
+    - cron:  '*/5 * * * *'
 jobs:
   sync-data:
     runs-on: ubuntu-latest
