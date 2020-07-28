@@ -1159,6 +1159,12 @@
     "Versandart_Nr": "",
     "Als_ausgegeben_kennzeichnen": ""
   },
+  "EMPLOYEE_GET": {
+    "Satzart": "EMPLOYEE_GET",
+    "Mitarbeiter_Nr": "",
+    "Firma_Nr": "",
+    "Text": ""
+  },
   "INVOICE_GET": {
     "Satzart": "INVOICE_GET",
     "Rechnungsnummer": "",
