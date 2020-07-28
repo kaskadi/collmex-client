@@ -11,6 +11,8 @@ on:
 jobs:
   sync-data:
     runs-on: ubuntu-latest
+    outputs:
+      DATA_CHANGED: false
     steps:
     - uses: actions/checkout@v2
     - name: Scrape data from Collmex
@@ -23,12 +25,12 @@ jobs:
         SATZARTEN_PATH: ${{ secrets.SATZARTEN_PATH }}
         GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
         GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
-    - name: Logging
-      run: echo "${{ steps.scrape.outputs.dataChanged }}"
+    - name: Update job output
+      run: echo "::set-output name=DATA_CHANGED::${{ steps.scrape.outputs.dataChanged }}"
   publish:
     runs-on: ubuntu-latest
     needs: sync-data
-    if: needs.sync-data.steps.scrape.outputs.dataChanged == 'true'
+    if: needs.sync-data.outputs.DATA_CHANGED
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
