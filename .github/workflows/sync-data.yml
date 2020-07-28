@@ -1,8 +1,8 @@
 name: sync-data
 on:
   schedule:
-    # update every day at 7AM '0 7 * * *'
-    - cron:  '*/5 * * * *'
+    # update every day at 7AM
+    - cron:  '0 7 * * *'
 jobs:
   sync-data:
     runs-on: ubuntu-latest
