@@ -3,6 +3,11 @@ on:
   schedule:
     # update every day at 7AM
     - cron:  '0 7 * * *'
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'data/**'
 jobs:
   sync-data:
     runs-on: ubuntu-latest
