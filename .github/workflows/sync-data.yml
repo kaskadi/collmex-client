@@ -25,7 +25,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: sync-data
-    if: ${{ $DATA_CHANGED == "true" }}
+    if: ${{ env.DATA_CHANGED }} == "true"
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
