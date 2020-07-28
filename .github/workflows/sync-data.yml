@@ -19,7 +19,7 @@ jobs:
         GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
         GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
     - name: Early action exit
-      if: !steps.scrape.outputs.dataChanged
+      if: ! steps.scrape.outputs.dataChanged
       run: |
         echo "No data change. Exiting..."
         exit 0
