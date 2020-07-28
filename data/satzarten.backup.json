@@ -1,4 +1,5 @@
 {
+  "test": {},
   "ABO_GET": {
     "Satzart": "ABO_GET",
     "Kunde_Nr": "",
@@ -1158,6 +1159,31 @@
     "Kundenauftrag_Nr": "",
     "Versandart_Nr": "",
     "Als_ausgegeben_kennzeichnen": ""
+  },
+  "EMPLOYEE": {
+    "Satzart": "EMPLOYEE",
+    "Mitarbeiter_Nr": "",
+    "Firma_Nr": "",
+    "Anrede": "",
+    "Vorname": "",
+    "Name_": "",
+    "Straße_": "",
+    "PLZ_": "",
+    "Ort_": "",
+    "Land": "",
+    "Telefon": "",
+    "Telefon_2": "",
+    "E-Mail_": "",
+    "Bemerkung": "",
+    "Iban_": "",
+    "Bic_": "",
+    "Bankname_": "",
+    "Kontonummer": "",
+    "Blz_": "",
+    "Kontoinhaber_": "",
+    "Art_": "",
+    "Eingetreten_am_": "",
+    "Ausgeschieden_am_": ""
   },
   "EMPLOYEE_GET": {
     "Satzart": "EMPLOYEE_GET",
