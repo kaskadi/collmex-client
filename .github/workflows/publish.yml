@@ -1,13 +1,13 @@
 name: publish
-on:
-  push:
-    branches:
-      - 'master'
-    paths:
-      - 'index.js'
-      - 'modules/**'
-      - 'data/**'
-      - 'package.json'
+# on:
+#   push:
+#     branches:
+#       - 'master'
+#     paths:
+#       - 'index.js'
+#       - 'modules/**'
+#       - 'data/**'
+#       - 'package.json'
 jobs:
   publish:
     runs-on: ubuntu-latest
