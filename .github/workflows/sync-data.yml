@@ -3,8 +3,6 @@ on:
   schedule:
     # update every day at 7AM '0 7 * * *'
     - cron:  '*/2 * * * *'
-# env:
-#   DATA_CHANGED: false
 jobs:
   sync-data:
     runs-on: ubuntu-latest
@@ -20,12 +18,14 @@ jobs:
         SATZARTEN_PATH: ${{ secrets.SATZARTEN_PATH }}
         GH_USER_NAME: ${{ secrets.GH_USER_NAME }}
         GH_USER_EMAIL: ${{ secrets.GH_USER_EMAIL }}
-    # - name: Set workflow conditional environment variable
-    #   run: echo "::set-env name=DATA_CHANGED::${{ steps.scrape.outputs.dataChanged }}"
+    - name: Early action exit
+      if: !steps.scrape.outputs.dataChanged
+      run: |
+        echo "No data change. Exiting..."
+        exit 0
   publish:
     runs-on: ubuntu-latest
     needs: sync-data
-    if: jobs.sync-data.steps.scrape.outputs.dataChanged
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
