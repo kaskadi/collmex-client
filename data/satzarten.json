@@ -1204,7 +1204,8 @@
     "Nur_vom_System_angelegte": "",
     "Briefpapier_nicht_verwenden": "",
     "Ausgabe_erforderlich": "",
-    "Kundenauftrag_Nr": ""
+    "Kundenauftrag_Nr": "",
+    "Produktnummer": ""
   },
   "INVOICE_OUTPUT_SET": {
     "Satzart": "INVOICE_OUTPUT_SET",
