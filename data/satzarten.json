@@ -568,8 +568,8 @@
     "Rechnungsnummer": "",
     "Nettobetrag_voller_Umsatzsteuersatz": "",
     "Steuer_zum_vollen_Umsatzsteuersatz": "",
-    "Nettobetrag_halber_Umsatzsteuersatz": "",
-    "Steuer_zum_halben__Umsatzsteuersatz": "",
+    "Nettobetrag_ermäßigter_Umsatzsteuersatz": "",
+    "Steuer_zum_ermäßigter__Umsatzsteuersatz": "",
     "Sonstige_Umsätze:_Konto_Nr.": "",
     "Sonstige_Umsätze:_Betrag": "",
     "Währung_(ISO-Codes)": "",
@@ -578,7 +578,7 @@
     "Buchungstext": "",
     "Zahlungsbedingung": "",
     "Kontonummer_voller_Umsatzsteuersatz": "",
-    "Kontonummer_halber_Umsatzsteuersatz": "",
+    "Kontonummer_ermäßigter_Umsatzsteuersatz": "",
     "Storno": "",
     "Kostenstelle": ""
   },
@@ -1204,7 +1204,8 @@
     "Nur_vom_System_angelegte": "",
     "Briefpapier_nicht_verwenden": "",
     "Ausgabe_erforderlich": "",
-    "Kundenauftrag_Nr": ""
+    "Kundenauftrag_Nr": "",
+    "Produktnummer": ""
   },
   "INVOICE_OUTPUT_SET": {
     "Satzart": "INVOICE_OUTPUT_SET",
