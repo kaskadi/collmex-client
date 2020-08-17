@@ -28,13 +28,13 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "csv-parse": "^4.10.1",
-    "iconv-lite": "^0.6.1",
+    "csv-parse": "^4.12.0",
+    "iconv-lite": "^0.6.2",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1",
+    "mocha": "^8.1.1",
     "standard": "^14.3.4"
   }
 }
