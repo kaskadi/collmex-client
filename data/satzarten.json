@@ -157,7 +157,8 @@
     "Kosten*": "",
     "Rohertrag*": "",
     "Marge*": "",
-    "Name": ""
+    "Name": "",
+    "Bemerkung": ""
   },
   "CMXACT": {
     "Satzart": "CMXACT",
