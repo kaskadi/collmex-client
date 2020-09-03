@@ -4,6 +4,7 @@
 
 [![](https://img.shields.io/codeclimate/maintainability/kaskadi/collmex-client?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
 [![](https://img.shields.io/codeclimate/tech-debt/kaskadi/collmex-client?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
+[![](https://img.shields.io/codeclimate/coverage/kaskadi/collmex-client?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
 
 # collmex-client
 
