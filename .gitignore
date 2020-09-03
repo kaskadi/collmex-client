@@ -1,2 +1,4 @@
 node_modules/
 test/data/options.json
+.nyc_output
+coverage
