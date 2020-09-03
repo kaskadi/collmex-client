@@ -49,7 +49,8 @@
     "Zugeordnet_Geschäftsjahr": "",
     "Zugeordnet_Positionsnummer": "",
     "Beleg_Nr": "",
-    "Internes_Memo": ""
+    "Internes_Memo": "",
+    "Gebucht_von": ""
   },
   "ACCDOC_GET": {
     "Satzart": "ACCDOC_GET",
@@ -110,6 +111,17 @@
     "Satzart": "ADRGRP",
     "Adressgruppe_Nr": "",
     "Bezeichnung": ""
+  },
+  "API_LOG": {
+    "Satzart": "API_LOG",
+    "Datum": "",
+    "Uhrzeit": "",
+    "Meldungstext": "",
+    "Benutzer": "",
+    "IP-Adresse": ""
+  },
+  "API_LOG_GET": {
+    "Satzart": "API_LOG_GET"
   },
   "ASSIGN_ADDRESSES_TO_GROUP": {
     "Satzart": "ASSIGN_ADDRESSES_TO_GROUP",
