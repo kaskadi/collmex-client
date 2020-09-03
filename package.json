@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -t 10000 test/**.test.js",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "coverage": "nyc npm test"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,15 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.1.1",
+    "nyc": "^15.1.0",
     "standard": "^14.3.4"
+  },
+  "nyc": {
+    "reporter": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "report-dir": "./coverage"
   }
 }
