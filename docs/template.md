@@ -27,9 +27,7 @@ A Node client to communicate with Collmex API. This was inspired by our [`co-col
 
 {{>main}}
 
-<a href="#output-formats"></a>
-
-**Output formats**
+**Output formats <a name="output-formats"></a>**
 
 | value | description |
 | --- | --- |
