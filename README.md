@@ -70,7 +70,7 @@ Proceed call to Collmex API
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | data | <code>object</code> \| <code>Array.&lt;object&gt;</code> |  | Data for the request to send to Collmex. Use an `array` if you would like to send multiple requests at once. |
-| [output_format] | <code>string</code> | <code>&quot;&#x27;object&#x27;&quot;</code> | Desired output type (set only for that specific call). See [here](#output-formats) for `output_format` valid values |
+| [output_format] | <code>string</code> | <code>&quot;object&quot;</code> | Desired output type (set only for that specific call). See [here](#output-formats) for `output_format` valid values |
 
 **Example**  
 ```js
@@ -100,12 +100,10 @@ Options for the new Collmex client instanciation
 | Password | <code>string</code> |  | Collmex password for given user |
 | CMXKundennummer | <code>number</code> |  | Collmex Customer Number |
 | Firma_Nr | <code>number</code> |  | Company Number (as registered with Collmex) |
-| [Systemname] | <code>string</code> | <code>&quot;&#x27;collmex-client&#x27;&quot;</code> | User-agent you would like to use for your client |
-| [Output] | <code>string</code> | <code>&quot;&#x27;object&#x27;&quot;</code> | Desired output type. Will be set for any further `get` calls except if reassigned or overwritten via `get` [`output_format`](module:collmex-client.get.output_format) parameter. |
+| [Systemname] | <code>string</code> | <code>&quot;collmex-client&quot;</code> | User-agent you would like to use for your client |
+| [Output] | <code>string</code> | <code>&quot;object&quot;</code> | Desired output type. Will be set for any further `get` calls except if reassigned or overwritten via `get` `output_format` parameter. |
 
-<a href="#output-formats"></a>
-
-**Output formats**
+**Output formats <a name="output-formats"></a>**
 
 | value | description |
 | --- | --- |
