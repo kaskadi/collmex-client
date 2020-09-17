@@ -103,6 +103,8 @@ Options for the new Collmex client instanciation
 | [Systemname] | <code>string</code> | <code>&quot;collmex-client&quot;</code> | User-agent you would like to use for your client |
 | [Output] | <code>string</code> | <code>&quot;object&quot;</code> | Desired output type. Will be set for any further `get` calls except if reassigned or overwritten via `get` `output_format` parameter. |
 
+# Details
+
 **Output formats <a name="output-formats"></a>**
 
 | value | description |
