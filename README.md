@@ -7,7 +7,6 @@
 [![Build workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/build?label=build&logo=mocha)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Abuild)
 [![Publish workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/publish?label=publish&logo=npm)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Apublish)
 [![Data sync workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/sync-data?label=sync-data&logo=github-actions)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Async-data)
-[![Docs generation status](https://img.shields.io/github/workflow/status/kaskadi/aws-es-client/generate-docs?label=docs&logo=read-the-docs)](https://github.com/kaskadi/aws-es-client/actions?query=workflow%3Agenerate-docs)
 
 **CodeClimate**
 
@@ -31,16 +30,15 @@ A Node client to communicate with Collmex API. This was inspired by our [`co-col
 npm i collmex-client
 ```
 
-# Usage
+# API documentation
 
-<a name="module_collmex-client"></a>
+## collmex-client
 
-## collmex-client ⇒ <code>Collmex</code>
-**Returns**: <code>Collmex</code> - New Collmex client  
+**Returns**: `Collmex` - New Collmex client  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| opts | <code>object</code> | [Options](#module_collmex-client..Options) to be passed to instanciate a new client |
+| opts | `object` | [Options] to be passed to instanciate a new client |
 
 **Example**  
 ```js
@@ -53,24 +51,24 @@ const collmex = require('collmex-client')({
 })
 ```
 
-* [collmex-client](#module_collmex-client) ⇒ <code>Collmex</code>
+* [collmex-client]
     * _static_
-        * [.get(data, [output_format])](#module_collmex-client.get) ⇒ <code>Promise</code> \| <code>Array.&lt;Promise&gt;</code>
+        * [.get(data, \[output_format\])]
     * _inner_
-        * [~Options](#module_collmex-client..Options) : <code>Object</code>
+        * [~Options]
 
-<a name="module_collmex-client.get"></a>
 
-### collmex.get(data, [output_format]) ⇒ <code>Promise</code> \| <code>Array.&lt;Promise&gt;</code>
+### collmex.get(data, \[output_format\])
+
 Proceed call to Collmex API
 
-**Kind**: static method of [<code>collmex-client</code>](#module_collmex-client)  
-**Returns**: <code>Promise</code> \| <code>Array.&lt;Promise&gt;</code> - The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client  
+**Kind**: static method of [`collmex-client`]  
+**Returns**: `Promise` ⎮ `Array.<Promise>` - The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
-| data | <code>object</code> \| <code>Array.&lt;object&gt;</code> |  | Data for the request to send to Collmex. Use an `array` if you would like to send multiple requests at once. |
-| [output_format] | <code>string</code> | <code>&quot;object&quot;</code> | Desired output type (set only for that specific call). See [here](#output-formats) for `output_format` valid values |
+| data | `object` \| `Array.<object>` |  | Data for the request to send to Collmex. Use an `array` if you would like to send multiple requests at once. |
+| \[output_format\] | `string` | `'object'` | Desired output type (set only for that specific call). See [here] for `output_format` valid values |
 
 **Example**  
 ```js
@@ -86,22 +84,32 @@ const data = await collmex.get([
  { Satzart: "STOCK_AVAILABLE_GET", Produktnummer: 12345 }
 ])
 ```
-<a name="module_collmex-client..Options"></a>
 
-### collmex-client~Options : <code>Object</code>
+### collmex-client~Options
+
 Options for the new Collmex client instanciation
 
-**Kind**: inner typedef of [<code>collmex-client</code>](#module_collmex-client)  
+**Kind**: inner typedef of [`collmex-client`][1]  
 **Properties**
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| User | <code>string</code> |  | Collmex user |
-| Password | <code>string</code> |  | Collmex password for given user |
-| CMXKundennummer | <code>number</code> |  | Collmex Customer Number |
-| Firma_Nr | <code>number</code> |  | Company Number (as registered with Collmex) |
-| [Systemname] | <code>string</code> | <code>&quot;collmex-client&quot;</code> | User-agent you would like to use for your client |
-| [Output] | <code>string</code> | <code>&quot;object&quot;</code> | Desired output type. Will be set for any further `get` calls except if reassigned or overwritten via `get` `output_format` parameter. |
+| User | `string` |  | Collmex user |
+| Password | `string` |  | Collmex password for given user |
+| CMXKundennummer | `number` |  | Collmex Customer Number |
+| Firma_Nr | `number` |  | Company Number (as registered with Collmex) |
+| \[Systemname\] | `string` | `'collmex-client'` | User-agent you would like to use for your client |
+| \[Output\] | `string` | `'object'` | Desired output type. Will be set for any further `get` calls except if reassigned or overwritten via `get` `output_format` parameter. |
+
+<!-- LINKS -->
+
+[Options]:#module_collmex-client..Options
+[collmex-client]:#collmex-client
+[~Options]:#collmex-clientoptions
+[`collmex-client`]:#collmex-client
+[here]:#output-formats
+[1]:#collmex-client
+[.get(data, \[output_format\])]:#collmexgetdata-output_format
 
 # Details
 
