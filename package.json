@@ -1,7 +1,7 @@
 {
   "name": "collmex-client",
   "version": "1.13.1",
-  "description": "a node client to communicate with Collmex API",
+  "description": "a node client to communicate with Collmex API.",
   "main": "index.js",
   "scripts": {
     "test": "mocha -t 10000 test/**.test.js",

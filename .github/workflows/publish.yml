@@ -45,9 +45,7 @@ jobs:
     - name: Tests
       run: npm test
       env:
-        ES_ID: ${{ secrets.ES_ID }}
-        ES_SECRET: ${{ secrets.ES_SECRET }}
-        ES_ENDPOINT: ${{ secrets.ES_ENDPOINT }}
+        INIT_CLIENT_OPTS: ${{ secrets.INIT_CLIENT_OPTS }}
     - name: Publish to NPM
       uses: JS-DevTools/npm-publish@v1
       with:
