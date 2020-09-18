@@ -34,11 +34,13 @@ npm i collmex-client
 
 ## collmex-client
 
-**Returns**: `Collmex` - New Collmex client  
+Creates a new client to communicate with Collmex API.
+
+**Returns**: `Collmex` - Collmex client  
 
 | Param | Type | Description |
 | --- | --- | --- |
-| opts | `object` | [Options] to be passed to instanciate a new client |
+| opts | `Options` | Options to be passed to instanciate a new client |
 
 **Example**  
 ```js
@@ -60,7 +62,7 @@ const collmex = require('collmex-client')({
 
 ### collmex.get(data, \[output_format\])
 
-Proceed call to Collmex API
+Use this method to call Collmex API.
 
 **Kind**: static method of [`collmex-client`]  
 **Returns**: `Promise` ⎮ `Array.<Promise>` - The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client  
@@ -103,7 +105,6 @@ Options for the new Collmex client instanciation
 
 <!-- LINKS -->
 
-[Options]:#module_collmex-client..Options
 [collmex-client]:#collmex-client
 [~Options]:#collmex-clientoptions
 [`collmex-client`]:#collmex-client
