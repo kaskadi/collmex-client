@@ -105,7 +105,7 @@ Options for the new Collmex client instanciation
 
 <!-- LINKS -->
 
-[Options]:collmex-client.Options
+[Options]:collmex-clientoptions
 [collmex-client]:#collmex-client
 [~Options]:#collmex-clientoptions
 [`collmex-client`]:#collmex-client
