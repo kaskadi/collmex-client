@@ -10,7 +10,7 @@ const parseData = require('./modules/parse-data.js')
  *
  * @module collmex-client
  * @typicalname collmex
- * @param {Options} opts - {@link module:collmex-client~Options|Options} to be passed to instanciate a new client
+ * @param {Options} opts - {@link collmex-client.Options|Options} to be passed to instanciate a new client
  * @returns {Collmex} Collmex client
  *
  * @example
