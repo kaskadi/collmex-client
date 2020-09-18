@@ -40,7 +40,7 @@ Creates a new client to communicate with Collmex API.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| opts | `Options` | Options to be passed to instanciate a new client |
+| opts | `Options` | [Options] to be passed to instanciate a new client |
 
 **Example**  
 ```js
@@ -105,6 +105,7 @@ Options for the new Collmex client instanciation
 
 <!-- LINKS -->
 
+[Options]:collmex-client~Options
 [collmex-client]:#collmex-client
 [~Options]:#collmex-clientoptions
 [`collmex-client`]:#collmex-client
