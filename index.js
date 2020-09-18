@@ -5,10 +5,13 @@ const sanitizeData = require('./modules/sanitize-data.js')
 const parseData = require('./modules/parse-data.js')
 
 /**
+ *
+ * Creates a new client to communicate with Collmex API.
+ *
  * @module collmex-client
  * @typicalname collmex
- * @param {object} opts - [Options]{@link module:collmex-client~Options} to be passed to instanciate a new client
- * @returns {Collmex} New Collmex client
+ * @param {Options} opts - Options to be passed to instanciate a new client
+ * @returns {Collmex} Collmex client
  *
  * @example
  * const collmex = require('collmex-client')({
@@ -42,7 +45,7 @@ class Collmex {
   }
 
   /**
-   * Proceed call to Collmex API
+   * Use this method to call Collmex API.
    * @function module:collmex-client.get
    * @param {object|object[]} data - Data for the request to send to Collmex. Use an `array` if you would like to send multiple requests at once.
    * @param {string} [output_format=object] - Desired output type (set only for that specific call). See [here]{@link #output-formats} for `output_format` valid values
