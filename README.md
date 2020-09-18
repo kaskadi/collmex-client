@@ -32,6 +32,18 @@ npm i collmex-client
 
 # API documentation
 
+## Modules
+Module | Description
+------ | -----------
+[collmex-client] | Creates a new client to communicate with Collmex API.
+
+## Typedefs
+
+Name | Description
+------ | -----------
+[Options] | Options for the new Collmex client instanciation
+
+
 ## collmex-client
 
 Creates a new client to communicate with Collmex API.
@@ -40,7 +52,7 @@ Creates a new client to communicate with Collmex API.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| opts | `Options` | [Options] to be passed to instanciate a new client |
+| opts | [`Options`] | Options to be passed to instanciate a new client |
 
 **Example**  
 ```js
@@ -53,16 +65,9 @@ const collmex = require('collmex-client')({
 })
 ```
 
-* [collmex-client]
-    * _static_
-        * [.get(data, \[output_format\])]
-    * _inner_
-        * [~Options]
-
-
 ### collmex.get(data, \[output_format\])
 
-Use this method to call Collmex API.
+Calls Collmex API.
 
 **Kind**: static method of [`collmex-client`]  
 **Returns**: `Promise` ⎮ `Array.<Promise>` - The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client  
@@ -87,11 +92,11 @@ const data = await collmex.get([
 ])
 ```
 
-### collmex-client~Options
+## Options
 
 Options for the new Collmex client instanciation
 
-**Kind**: inner typedef of [`collmex-client`][1]  
+**Kind**: global typedef  
 **Properties**
 
 | Name | Type | Default | Description |
@@ -105,13 +110,11 @@ Options for the new Collmex client instanciation
 
 <!-- LINKS -->
 
-[Options]:collmex-client:options
 [collmex-client]:#collmex-client
-[~Options]:#collmex-clientoptions
+[Options]:#options
+[`Options`]:#options
 [`collmex-client`]:#collmex-client
 [here]:#output-formats
-[1]:#collmex-client
-[.get(data, \[output_format\])]:#collmexgetdata-output_format
 
 # Details
 
