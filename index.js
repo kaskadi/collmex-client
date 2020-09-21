@@ -49,7 +49,7 @@ class Collmex {
    * @function module:collmex-client.get
    * @param {object|object[]} data - Data for the request to send to Collmex. Use an `array` if you would like to send multiple requests at once.
    * @param {string} [output_format=object] - Desired output type (set only for that specific call). See [here]{@link #output-formats} for `output_format` valid values
-   * @returns {Promise|Promise[]} The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client
+   * @returns {Promise<object[]|array[]|string[]>} The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client
    * @example
    * // retrieve a given product from Collmex
    *
