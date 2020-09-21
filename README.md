@@ -70,7 +70,7 @@ const collmex = require('collmex-client')({
 Calls Collmex API.
 
 **Kind**: static method of [`collmex-client`]  
-**Returns**: `Promise` ⎮ `Array.<Promise>` - The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client  
+**Returns**: `Promise.<(Array.<object>|Array.<array>|Array.<string>)>` - The fulfilled promise(s) value type depends on the `output_format` provided when using `get` or on the `Output` option used when instanciating a new client  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
