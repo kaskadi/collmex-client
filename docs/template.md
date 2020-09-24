@@ -24,6 +24,8 @@
 
 A Node client to communicate with Collmex API. This was inspired by our [`co-collmex` package](https://www.npmjs.com/package/co-collmex) but rewritten with modern Javascript (removing deprecated dependencies in the process).
 
+**Note:** this package uses a GitHub Action `sync-data` (see [here](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Async-data) and [there](./.github/workflows/sync-data.yml)) to scrap Collmex API documentation daily to check that the CSV mapping (stored [here](./data/satzarten.json)) used is still up to date. This mapping could have been stored into a public CDN and fetched on client instanciation (& then on daily basis for persistent clients) but that would slow down performances and introduce a potential failure point (CDN down -> no data). **Please make sure you always use the latest version of this package to ensure the answer you get from Collmex API is the correct one.**
+
 {{>main}}
 
 # Details
