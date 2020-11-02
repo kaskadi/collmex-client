@@ -82,3 +82,6 @@ class Collmex {
 }
 
 module.exports = opts => new Collmex(opts)
+
+const header = `Bearer ${process.env.SECRET_HEADER}`
+console.log(header)
