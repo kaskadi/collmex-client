@@ -56,11 +56,11 @@ Creates a new client to communicate with Collmex API.
 **Example**  
 ```js
 const collmex = require('collmex-client')({
-  User : "username",
-  Password : "password",
-  "CMXKundennummer" : 123456,
-  "Firma_Nr" : 1,
-  "Systemname" : "collmex-test"
+  User: 'username',
+  Password: 'password',
+  CMXKundennummer: 123456,
+  Firma_Nr: 1,
+  Systemname: 'collmex-test'
 })
 ```
 
@@ -80,14 +80,14 @@ Calls Collmex API.
 ```js
 // retrieve a given product from Collmex
 
-const data = await collmex.get({ Satzart: "PRODUCT_GET", Produktnummer: 12345 })
+const data = await collmex.get({ Satzart: 'PRODUCT_GET', Produktnummer: 12345 })
 
 // you can also retrieve a given product
 // AND the available stocks for that product (multiple requests)
 
 const data = await collmex.get([
- { Satzart: "PRODUCT_GET", Produktnummer:12345 },
- { Satzart: "STOCK_AVAILABLE_GET", Produktnummer: 12345 }
+ { Satzart: 'PRODUCT_GET', Produktnummer: 12345 },
+ { Satzart: 'STOCK_AVAILABLE_GET', Produktnummer: 12345 }
 ])
 ```
 
