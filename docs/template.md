@@ -7,16 +7,13 @@
 [![Build workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/build?label=build&logo=mocha)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Abuild)
 [![Publish workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/publish?label=publish&logo=npm)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Apublish)
 [![Data sync workflow status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/sync-data?label=sync-data&logo=github-actions)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Async-data)
+[![Code scanning status](https://img.shields.io/github/workflow/status/kaskadi/collmex-client/code-scanning?label=code-scanning&logo=github)](https://github.com/kaskadi/collmex-client/actions?query=workflow%3Acode-scanning)
 
 **CodeClimate**
 
 [![](https://img.shields.io/codeclimate/maintainability/kaskadi/aws-es-client?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/aws-es-client)
 [![](https://img.shields.io/codeclimate/tech-debt/kaskadi/aws-es-client?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/aws-es-client)
 [![](https://img.shields.io/codeclimate/coverage/kaskadi/aws-es-client?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/aws-es-client)
-
-**LGTM**
-
-[![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/aws-es-client?label=code%20quality&logo=LGTM)](https://lgtm.com/projects/g/kaskadi/aws-es-client/?mode=list&logo=LGTM)
 
 ****
 
