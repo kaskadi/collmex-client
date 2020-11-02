@@ -1,7 +1,7 @@
 # scan code using CodeQL on PR (just like LGTM)
 name: code-scanning
 on:
-  pull_request:
+  push:
     branches:
       - master
 jobs:
