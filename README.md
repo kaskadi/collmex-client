@@ -118,11 +118,11 @@ Options for the new Collmex client instanciation
 
 **Output formats <a name="output-formats"></a>**
 
-| value | description |
+| Value | Description |
 | --- | --- |
-| "object" | **default** turns the response into an array of objects with named properties according to the collmex api documentation. numeric values are converted to js notation (dezimal point). Dates are turned to js/mysql compatible dates.|
-| "array" | turns the response into an array of arrays. useful for bulk inserts into mysql for example. numeric values are converted to js notation (dezimal point). Dates are turned to js/mysql compatible dates.|
-| "raw" | the raw response (CSV with ";" as the seperator). no conversion is performed. |
+| `object` | **default** turns the response into an array of objects with named properties according to the collmex api documentation. numeric values are converted to js notation (dezimal point). Dates are turned to js/mysql compatible dates.|
+| `array` | turns the response into an array of arrays. useful for bulk inserts into mysql for example. numeric values are converted to js notation (dezimal point). Dates are turned to js/mysql compatible dates.|
+| `raw` | the raw response (CSV with ";" as the seperator). no conversion is performed. |
 
 **Notes**
 
