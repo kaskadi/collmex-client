@@ -1,6 +1,6 @@
-![](https://img.shields.io/github/package-json/v/kaskadi/aws-es-client)
+![](https://img.shields.io/github/package-json/v/kaskadi/collmex-client)
 ![](https://img.shields.io/badge/code--style-standard-blue)
-![](https://img.shields.io/github/license/kaskadi/aws-es-client?color=blue)
+![](https://img.shields.io/github/license/kaskadi/collmex-client?color=blue)
 
 **GitHub Actions workflows status**
 
@@ -10,9 +10,9 @@
 
 **CodeClimate**
 
-[![](https://img.shields.io/codeclimate/maintainability/kaskadi/aws-es-client?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/aws-es-client)
-[![](https://img.shields.io/codeclimate/tech-debt/kaskadi/aws-es-client?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/aws-es-client)
-[![](https://img.shields.io/codeclimate/coverage/kaskadi/aws-es-client?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/aws-es-client)
+[![](https://img.shields.io/codeclimate/maintainability/kaskadi/collmex-client?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
+[![](https://img.shields.io/codeclimate/tech-debt/kaskadi/collmex-client?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
+[![](https://img.shields.io/codeclimate/coverage/kaskadi/collmex-client?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/collmex-client)
 
 ****
 
