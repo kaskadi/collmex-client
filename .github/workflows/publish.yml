@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - 'master'
+      - 'release/**'
     paths:
       - 'index.js'
       - 'modules/**'

@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - 'master'
+      - 'release/**'
       - 'dev'
     types: [opened, reopened, edited, synchronize]
     paths:
