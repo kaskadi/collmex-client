@@ -31,6 +31,16 @@ jobs:
       uses: github/codeql-action/autobuild@v1
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: npm i
+    - name: Test
+      run: npm test
+      env:
+        INIT_CLIENT_OPTS: ${{ secrets.INIT_CLIENT_OPTS }}
   generate-docs:
     runs-on: ubuntu-latest
     steps:
@@ -50,7 +60,7 @@ jobs:
         template: docs/template.md
   publish:
     runs-on: ubuntu-latest
-    needs: [analyze, generate-docs]
+    needs: [analyze, test, generate-docs]
     if: github.repository != 'kaskadi/template-npm-pkg' # this is done to skip publish workflow if in template (because the package does not exist and therefore this would fail)
     steps:
     - uses: actions/checkout@v2
@@ -64,10 +74,6 @@ jobs:
         git pull
     - name: Install dependencies
       run: npm i
-    - name: Tests
-      run: npm test
-      env:
-        INIT_CLIENT_OPTS: ${{ secrets.INIT_CLIENT_OPTS }}
     - name: Publish to NPM
       uses: JS-DevTools/npm-publish@v1
       with:
