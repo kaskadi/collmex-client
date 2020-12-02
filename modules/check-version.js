@@ -5,7 +5,6 @@ const { spawnSync } = require('child_process')
 module.exports = () => {
   const pjson = JSON.parse(readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'))
   const pkgName = pjson.name
-  console.log(`INFO: comparing locally installed version of ${pkgName} to latest available on npm...`)
   const localVer = pjson.version
   const npmData = JSON.parse(spawnSync('npm', ['view', pkgName, '--json']).stdout.toString())
   const remoteVer = npmData.version
