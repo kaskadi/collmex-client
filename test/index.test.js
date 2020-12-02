@@ -3,10 +3,14 @@ const assert = require('chai').assert
 const fs = require('fs')
 const options = fs.existsSync(`${__dirname}/data/options.json`) ? require('./data/options.json') : process.env.INIT_CLIENT_OPTS ? JSON.parse(process.env.INIT_CLIENT_OPTS) : require('./data/options.default.json')
 const invalidOptions = require('./data/options.invalid.json')
-const collmex = require('../index.js')(options)
-const invalidCollmex = require('../index.js')(invalidOptions)
+const noOptsCollmex = require('../')()
+const collmex = require('../')(options)
+const invalidCollmex = require('../')(invalidOptions)
 
 describe('collmex-client', function () {
+  it('should have default options when no options are specified', function () {
+    testOptions(noOptsCollmex)
+  })
   it('should be able to get product data from collmex as array', async function () {
     await collmex.get([{ Satzart: 'PRODUCT_GET', Produktnummer: options.Produktnummer }], 'array').then(testDataType('array'))
   })
@@ -85,6 +89,16 @@ describe('collmex-client', function () {
     await collmex.get({ Satzart: 'BILL_OF_MATERIAL_GET' }).then(testResponseFields('CMXBOM'))
   })
 })
+
+function testOptions (client) {
+  const { User, Password, CMXKundennummer, Systemname, Output } = client
+  assert.equal(User, 'noname')
+  assert.equal(Password, 'password')
+  assert.equal(CMXKundennummer, '112233')
+  assert.equal(client.Firma_Nr, '1')
+  assert.equal(Systemname, 'collmex-client')
+  assert.equal(Output, 'object')
+}
 
 function testDataType (format) {
   return res => {
