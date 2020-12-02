@@ -9,7 +9,7 @@ module.exports = () => {
   const npmData = JSON.parse(spawnSync('npm', ['view', pkgName, '--json']).stdout.toString())
   const remoteVer = npmData.version
   if (checkSum(localVer) < checkSum(remoteVer)) {
-    console.log(`WARNING: your local version of ${pkgName} is ${localVer} while the latest available version on npm is ${remoteVer}. Please consider updating your client as you may be using outdated CSV mapping...`)
+    console.log(`WARNING: your local version of ${pkgName} is ${localVer} while the latest available version on npm is ${remoteVer}. Please consider updating your client as you may be using an outdated CSV mapping...`)
   }
 }
 
