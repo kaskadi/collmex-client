@@ -3,6 +3,7 @@ const getCollmexData = require('./modules/get-collmex-data.js')
 const parseCSV = require('csv-parse/lib/sync')
 const sanitizeData = require('./modules/sanitize-data.js')
 const parseData = require('./modules/parse-data.js')
+const checkVersion = require('./modules/check-version.js')
 
 /**
  * Options for the new Collmex client instanciation
@@ -42,6 +43,7 @@ class Collmex {
     this.Firma_Nr = opts.Firma_Nr || 1
     this.Systemname = opts.Systemname || 'collmex-client'
     this.Output = opts.Output || 'object'
+    checkVersion()
   }
 
   /**
