@@ -36,7 +36,7 @@ const checkVersion = require('./modules/check-version.js')
  */
 
 class Collmex {
-  constructor (opts) {
+  constructor (opts = {}) {
     this.User = opts.User || 'noname'
     this.Password = opts.Password || 'password'
     this.CMXKundennummer = opts.CMXKundennummer || '112233'
