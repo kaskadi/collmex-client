@@ -1614,7 +1614,9 @@
     "Produktnummer": "",
     "Produktgruppe": "",
     "Text": "",
-    "Typ": ""
+    "Typ": "",
+    "Nur_geänderte": "",
+    "Systemname": ""
   },
   "TRACKING_NUMBER": {
     "Satzart": "TRACKING_NUMBER",
