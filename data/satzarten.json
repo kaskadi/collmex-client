@@ -222,7 +222,8 @@
     "Vermittler-Firma_Nr": "",
     "Lastschrift-Mandatsreferenz_": "",
     "Datum_Unterschrift": "",
-    "Wiedervorlage-Uhrzeit": ""
+    "Wiedervorlage-Uhrzeit": "",
+    "Adressnummer_des_Ansprechpartners": ""
   },
   "CMXASP": {
     "Satzart": "CMXASP",

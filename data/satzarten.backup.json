@@ -468,7 +468,8 @@
     "Kosten_manuell": "",
     "EAN": "",
     "Lieferungen": "",
-    "Auftragsnummer_bei_Kunde": ""
+    "Auftragsnummer_bei_Kunde": "",
+    "Abw._Empfänger": ""
   },
   "CMXKND": {
     "Satzart": "CMXKND",
