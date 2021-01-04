@@ -2,24 +2,29 @@
 const assert = require('chai').assert
 const capcon = require('capture-console')
 const pjson = require('../package.json')
-const originalVersion = pjson.version
+let remoteVer
 const { writeFileSync } = require('fs')
+const { spawnSync } = require('child_process')
 
 describe('collmex-client check version utility', function () {
+  before(function () {
+    const npmData = JSON.parse(spawnSync('npm', ['view', 'collmex-client', '--json']).stdout.toString())
+    remoteVer = npmData.version
+  })
   it('should warn if version is behind on patches', function () {
-    updatePjsonVersion(getWrongVersion(originalVersion, 2))
+    updatePjsonVersion(getWrongVersion(remoteVer, 2))
     test(true)
   })
   it('should warn if version is behind on minors', function () {
-    updatePjsonVersion(getWrongVersion(originalVersion, 1))
+    updatePjsonVersion(getWrongVersion(remoteVer, 1))
     test(true)
   })
   it('should warn if version is behind on majors', function () {
-    updatePjsonVersion(getWrongVersion(originalVersion, 0))
+    updatePjsonVersion(getWrongVersion(remoteVer, 0))
     test(true)
   })
   it('should not warn if version is latest', function () {
-    updatePjsonVersion(originalVersion)
+    updatePjsonVersion(remoteVer)
     test(false)
   })
   after(function () {
