@@ -1608,7 +1608,11 @@
     "Lieferant_Nr": "",
     "Stornos": "",
     "Nur_geänderte": "",
-    "Systemname": ""
+    "Systemname": "",
+    "Lieferantenauftrag_Nr": "",
+    "Lieferung_Nr": "",
+    "Rechnung_Nr": "",
+    "Produktionsauftrag_Nr": ""
   },
   "STOCK_GET": {
     "Satzart": "STOCK_GET",

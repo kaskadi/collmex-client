@@ -1223,6 +1223,19 @@
     "Kundenauftrag_Nr": "",
     "Produktnummer": ""
   },
+  "INVOICE_OUTPUT": {
+    "Satzart": "INVOICE_OUTPUT",
+    "Firma_Nr": "",
+    "Rechnungsnummer": "",
+    "Ausgabemedium": "",
+    "Ausgabe_erforderlich": "",
+    "Kunde_Nr": "",
+    "Rechnungsdatum_von": "",
+    "Rechnungsdatum_bis": "",
+    "Max._Anzahl": "",
+    "Auch_gelöschte": "",
+    "Rechnungen_nicht_buchen": ""
+  },
   "INVOICE_OUTPUT_SET": {
     "Satzart": "INVOICE_OUTPUT_SET",
     "Rechnung_Nr": "",
