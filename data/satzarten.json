@@ -1676,7 +1676,8 @@
     "Rabatt-Grund": "",
     "Vermittler": "",
     "Mindestbestellwert": "",
-    "Währung": ""
+    "Währung": "",
+    "Anzahl_Einlösungen": ""
   },
   "VOUCHER_GET": {
     "Satzart": "VOUCHER_GET",
