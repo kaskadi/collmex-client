@@ -123,6 +123,13 @@
   "API_LOG_GET": {
     "Satzart": "API_LOG_GET"
   },
+  "API_NOTIFICATION": {
+    "Satzart": "API_NOTIFICATION",
+    "System": "",
+    "Ereignis": "",
+    "URL": "",
+    "Inaktiv": ""
+  },
   "ASSIGN_ADDRESSES_TO_GROUP": {
     "Satzart": "ASSIGN_ADDRESSES_TO_GROUP",
     "Adressgruppe": ""
