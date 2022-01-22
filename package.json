@@ -31,7 +31,7 @@
   "dependencies": {
     "csv-parse": "^4.12.0",
     "iconv-lite": "^0.6.2",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^3.1.1"
   },
   "devDependencies": {
     "capture-console": "^1.0.1",
