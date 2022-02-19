@@ -11,6 +11,9 @@ function getRequestBody (opts) {
   return opts.reduce((req, opt) => {
     const satz = satzarten[opt.Satzart]
     for (const prop in opt) {
+      if (!satz.hasOwnProperty(prop)) {
+        throw (`Property ${prop} not in ${satz.Satzart}`);
+      }
       satz[prop] = opt[prop]
     }
     for (const prop of ['Firma_Nr', 'Systemname']) {
