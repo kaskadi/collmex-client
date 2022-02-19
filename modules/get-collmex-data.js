@@ -15,6 +15,9 @@ function getRequestBody (opts) {
         throw (`Property ${prop} not in ${satz.Satzart}`);
       }
       satz[prop] = opt[prop]
+      if (typeof satz[prop] === 'number') {
+        satz[prop] = satz[prop].toString().replace(".", ",");
+      }
     }
     for (const prop of ['Firma_Nr', 'Systemname']) {
       if (Object.prototype.hasOwnProperty.call(satz, prop)) {
