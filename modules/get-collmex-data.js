@@ -10,21 +10,24 @@ function getRequestBody (opts) {
   const satzarten = require('./load-satzarten.js')()
   return opts.reduce((req, opt) => {
     const satz = satzarten[opt.Satzart]
+    let tempsatz = {
+      ...satz
+    };
     for (const prop in opt) {
-      if (!satz.hasOwnProperty(prop)) {
-        throw (`Property ${prop} not in ${satz.Satzart}`);
+      if (!tempsatz.hasOwnProperty(prop)) {
+        throw (`Property ${prop} not in ${tempsatz.Satzart}`);
       }
-      satz[prop] = opt[prop]
-      if (typeof satz[prop] === 'number') {
-        satz[prop] = satz[prop].toString().replace(".", ",");
+      tempsatz[prop] = opt[prop]
+      if (typeof tempsatz[prop] === 'number') {
+        tempsatz[prop] = tempsatz[prop].toString().replace(".", ",");
       }
     }
     for (const prop of ['Firma_Nr', 'Systemname']) {
-      if (Object.prototype.hasOwnProperty.call(satz, prop)) {
-        satz[prop] = opt[prop] || this[prop]
+      if (Object.prototype.hasOwnProperty.call(tempsatz, prop)) {
+        tempsatz[prop] = opt[prop] || this[prop]
       }
     }
-    return req + `${Object.values(satz).join(';')}\n`
+    return req + `${Object.values(tempsatz).join(';')}\n`
   }, '')
 }
 
