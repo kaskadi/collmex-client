@@ -6,7 +6,12 @@ module.exports = () => {
   const pjson = JSON.parse(readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'))
   const pkgName = pjson.name
   const localVer = pjson.version
-  const npmData = JSON.parse(spawnSync('npm', ['view', pkgName, '--json']).stdout.toString())
+  let npmData
+  if (process.platform === 'win32') {
+    npmData = JSON.parse(spawnSync('npm.cmd', ['view', pkgName, '--json']).stdout.toString())
+  } else {
+    npmData = JSON.parse(spawnSync('npm', ['view', pkgName, '--json']).stdout.toString())
+  }
   const remoteVer = npmData.version
   if (checkSum(localVer) < checkSum(remoteVer)) {
     console.log(`WARNING: your local version of ${pkgName} is ${localVer} while the latest available version on npm is ${remoteVer}. Please consider updating your client as you may be using an outdated CSV mapping...`)
